@@ -1,249 +1,195 @@
-/* Media Queries */
-/* Card sizing */
-/* Colors */
-/* Calculations */
-/* Placeholders */
-@media (min-width: 1000px) {
-  #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-
-  #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
-    position: absolute;
-    content: "";
-    width: 9px;
-    height: 9px;
-    background-color: #bdbdbd;
-    border-radius: 9px;
-    box-shadow: 0px 0px 2px 8px #f7f7f7;
-  }
-}
-/* Some Cool Stuff */
-.demo-card:nth-child(1) {
-  order: 1;
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ff6d6d;
+    font-family: arial
 }
 
-.demo-card:nth-child(2) {
-  order: 4;
-}
-
-.demo-card:nth-child(3) {
-  order: 2;
-}
-
-.demo-card:nth-child(4) {
-  order: 5;
-}
-
-.demo-card:nth-child(5) {
-  order: 3;
-}
-
-.demo-card:nth-child(6) {
-  order: 6;
-}
-
-/* Border Box */
-* {
-  box-sizing: border-box;
-}
-
-/* Fonts */
-body {
-  font-family: Roboto;
-}
-
-#timeline {
-  padding: 100px 0;
-  background: #f7f7f7;
-  border-top: 1px solid rgba(191, 191, 191, 0.4);
-  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
-}
-#timeline h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-#timeline p.leader {
-  text-align: center;
-  max-width: 90%;
-  margin: auto;
-  margin-bottom: 45px;
-}
-#timeline .demo-card-wrapper {
-  position: relative;
-  margin: auto;
-}
-@media (min-width: 1000px) {
-  #timeline .demo-card-wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    width: 1170px;
-    height: 1650px;
-    margin: 0 auto;
-  }
-}
-#timeline .demo-card-wrapper::after {
-  z-index: 1;
-  content: "";
+.social{
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  border-left: 1px solid rgba(191, 191, 191, 0.4);
-}
-@media (min-width: 1000px) {
-  #timeline .demo-card-wrapper::after {
-    border-left: 1px solid #bdbdbd;
-  }
-}
-#timeline .demo-card {
-  position: relative;
-  display: block;
-  margin: 10px auto 80px;
-  max-width: 94%;
-  z-index: 2;
-}
-@media (min-width: 480px) {
-  #timeline .demo-card {
-    max-width: 60%;
-    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
-  }
-}
-@media (min-width: 720px) {
-  #timeline .demo-card {
-    max-width: 40%;
-  }
-}
-@media (min-width: 1000px) {
-  #timeline .demo-card {
-    max-width: 450px;
-    height: 400px;
-    margin: 90px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-  }
-  #timeline .demo-card:nth-child(odd) {
-    margin-right: 45px;
-  }
-  #timeline .demo-card:nth-child(odd) .head::after {
-    border-left-width: 15px;
-    border-left-style: solid;
-    left: 100%;
-  }
-  #timeline .demo-card:nth-child(odd) .head::before {
-    left: 491.5px;
-  }
-  #timeline .demo-card:nth-child(even) {
-    margin-left: 45px;
-  }
-  #timeline .demo-card:nth-child(even) .head::after {
-    border-right-width: 15px;
-    border-right-style: solid;
-    right: 100%;
-  }
-  #timeline .demo-card:nth-child(even) .head::before {
-    right: 489.5px;
-  }
-  #timeline .demo-card:nth-child(2) {
-    margin-top: 180px;
-  }
-}
-#timeline .demo-card .head {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: 400;
-}
-#timeline .demo-card .head .number-box {
-  display: inline;
-  float: left;
-  margin: 15px;
+  top:0;
+  left:80%;
   padding: 10px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 600;
-  background: rgba(0, 0, 0, 0.17);
+  font-size: 110%;
+  text-transform: capitalize;
+  color:#fff;
+  font-weight: 700;
+  background-color:rgba(250,250,250,0.3);
+  width:120px;
+  text-align:center;
+  z-index:2;
+  line-height:35px
 }
-#timeline .demo-card .head h2 {
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: inherit;
-  letter-spacing: 2px;
-  margin: 0;
-  padding-bottom: 6px;
-  line-height: 1rem;
+
+.social a{
+  text-decoration: none;
+  color:#333
 }
-@media (min-width: 480px) {
-  #timeline .demo-card .head h2 {
-    font-size: 165%;
-    line-height: 1.2rem;
-  }
+.social a:after{
+  content:" ــــــــــ ";
+  display:block;
+  color:#fff;
 }
-#timeline .demo-card .head h2 span {
-  display: block;
-  font-size: 0.6rem;
-  margin: 0;
+
+.social a:last-of-type:after{content:""}
+
+
+.box{
+    margin:0 10%;
+    height: 630px;
+    overflow: hidden;
+    padding: 10px 0 40px 60px
 }
-@media (min-width: 480px) {
-  #timeline .demo-card .head h2 span {
-    font-size: 0.8rem;
-  }
+
+.box ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.5s linear;
+    top:0
 }
-#timeline .demo-card .body {
-  background: #fff;
-  border: 1px solid rgba(191, 191, 191, 0.4);
-  border-top: 0;
-  padding: 15px;
+
+.box ul:last-of-type{top:80px}
+
+.box ul:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px dashed #fff;
+    position: absolute;
+    top:0;
+    left:30px
 }
-@media (min-width: 1000px) {
-  #timeline .demo-card .body {
-    height: 315px;
-  }
+
+.box ul li{
+    margin: 20px 60px 60px;
+    position: relative;
+    padding: 10px 20px;
+    background:rgba(255, 255, 255, 0.3);
+    color:#fff;
+    border-radius: 10px;
+    line-height: 20px;
+    width: 35%
 }
-#timeline .demo-card .body p {
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 15px;
+
+
+.box ul li > span{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px solid #fff;
+    position: absolute;
+    top:0;
+    left:-30px
 }
-#timeline .demo-card .body img {
-  display: block;
-  width: 100%;
+
+.box ul li > span:before,.box ul li > span:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#ff6d6d;
+    border:2px solid #fff;
+    position: absolute;
+    left:-7.5px
 }
-#timeline .demo-card--step1 {
-  background-color: #46b8e9;
+
+.box ul li > span:before{top:-10px}
+.box ul li > span:after{top:95%}
+
+.box .title{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px
 }
-#timeline .demo-card--step1 .head::after {
-  border-color: #46b8e9;
+
+.box .info:first-letter{text-transform: capitalize;line-height: 1.7}
+
+.box .name{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px
 }
-#timeline .demo-card--step2 {
-  background-color: #3ee9d1;
+
+
+.box .time span{
+    position: absolute;
+    left: -100px;
+    color:#fff;
+    font-size:80%;
+    font-weight: bold;
 }
-#timeline .demo-card--step2 .head::after {
-  border-color: #3ee9d1;
+.box .time span:first-child{top:-16px}
+.box .time span:last-child{top:94%}
+
+
+.arrow{
+    position: absolute;
+    top: 105%;
+    left: 22%;
+    cursor: pointer;
+  height:20px;
+  width:20px
 }
-#timeline .demo-card--step3 {
-  background-color: #ce43eb;
+
+.arrow:hover{
+    -webkit-animation: arrow 1s linear infinite;
+       -moz-animation: arrow 1s linear infinite;
+         -o-animation: arrow 1s linear infinite;
+            animation: arrow 1s linear infinite;
 }
-#timeline .demo-card--step3 .head::after {
-  border-color: #ce43eb;
+
+.box ul:last-of-type .arrow{
+    position: absolute;
+    top: 105%;
+    left: 22%;
+    transform: rotateX(180deg);
+    cursor: pointer;
 }
-#timeline .demo-card--step4 {
-  background-color: #4d92eb;
+
+svg{
+    width: 20px;
+    height: 20px
 }
-#timeline .demo-card--step4 .head::after {
-  border-color: #4d92eb;
+
+@keyframes arrow{
+    0%,100%{
+        top:105%
+    }
+    50%{
+        top:106%
+    }
 }
-#timeline .demo-card--step5 {
-  background-color: #46b8e9;
+
+@-webkit-keyframes arrow{
+    0%,100%{
+        top:105%
+    }
+    50%{
+        top:106%
+    }
 }
-#timeline .demo-card--step5 .head::after {
-  border-color: #46b8e9;
+
+@-moz-keyframes arrow{
+    0%,100%{
+        top:105%
+    }
+    50%{
+        top:106%
+    }
+}
+
+@-o-keyframes arrow{
+    0%,100%{
+        top:105%
+    }
+    50%{
+        top:106%
+    }
 }
