@@ -2,149 +2,89 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Vertical Timeline</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+  <title>Flexbox Timeline Layout</title>
   
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
+  
       <link rel="stylesheet" href="css/style.css">
 
   
 </head>
 
 <body>
-  <header>
-    <div class="container text-center">
-      <h1>Vertical Timeline</h1>
-      <p>Sava Lazic</p>
-    </div>
-  </header>
+  <section id=timeline>
+	<h1>A Flexbox Timeline</h1>
+	<p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+	<div class="demo-card-wrapper">
+		<div class="demo-card demo-card--step1">
+			<div class="head">
+				<div class="number-box">
+					<span>01</span>
+				</div>
+				<h2><span class="small">Subtitle</span> Technology</h2>
+			</div>
+			<div class="body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
 
-  <section class="timeline">
-    <div class="container">
-      <div class="timeline-item">
-        <div class="timeline-img"></div>
+		<div class="demo-card demo-card--step2">
+			<div class="head">
+				<div class="number-box">
+					<span>02</span>
+				</div>
+				<h2><span class="small">Subtitle</span> Confidence</h2>
+			</div>
+			<div class="body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
 
-        <div class="timeline-content js--fadeInLeft">
-          <h2>Title</h2>
-       		<div class="date">1 MAY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div> 
-      
-      <div class="timeline-item">
+		<div class="demo-card demo-card--step3">
+			<div class="head">
+				<div class="number-box">
+					<span>03</span>
+				</div>
+				<h2><span class="small">Subtitle</span> Adaptation</h2>
+			</div>
+			<div class="body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
 
-        <div class="timeline-img"></div>
+		<div class="demo-card demo-card--step4">
+			<div class="head">
+				<div class="number-box">
+					<span>04</span>
+				</div>
+				<h2><span class="small">Subtitle</span> Consistency</h2>
+			</div>
+			<div class="body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
 
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">25 MAY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">3 JUN 2016</div>
-          <h2>Quote</h2>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-        </div>
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInRight">
-        	<h2>Title</h2>
-        	<div class="date">22 JUN 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInLeft">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">10 JULY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">30 JULY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>  
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">5 AUG 2016</div>
-          <h2>Quote</h2>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-        </div>
-      </div>   
-
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">19 AUG 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>  
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">1 SEP 2016</div>
-          <h2>Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-
-      
-          
-    </div>
-  </section>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-
-    <script src="js/index.js"></script>
-
+		<div class="demo-card demo-card--step5">
+			<div class="head">
+				<div class="number-box">
+					<span>05</span>
+				</div>
+				<h2><span class="small">Subtitle</span> Conversion</h2>
+			</div>
+			<div class="body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
+    
+	</div>
+</section>
+  
+  
 </body>
 </html>
